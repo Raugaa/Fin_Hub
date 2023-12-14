@@ -119,3 +119,12 @@ def register(request):
 
 def mainpage(request):
     return render(request, "gg.html")
+
+def dashboard(request):
+    return render(request, "dashboard.html")
+
+def contact(request):
+    return render(request, "contact.html")
+
+def services(request):
+    return render(request, "services.html")

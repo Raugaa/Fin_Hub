@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -541,6 +540,17 @@
             text-align: center;
             /* font-size: 1vh !important; */
         }
+        .low{
+            margin-top: 5vh;
+            margin-left: 5vh;
+            margin-right: 5vh;
+            max-height: 40vh;
+            margin-bottom: 20vh;
+        }
+        .carimg{
+            height: 100vh;
+
+        }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -565,13 +575,7 @@
     </script>
 
 
-
-
-
-
-
 </head>
-
 <body>
     <header>
         <a href = "/login/"><div class="logout">logout</div></a>
@@ -585,11 +589,11 @@
         <div class="menu-icon">&#9776;</div>
 
         <div class="dropdown">
-            <a href="#" ondblclick="changeColor(this)">Home</a>
+            <a href="/mainpage/" ondblclick="changeColor(this)">Home</a>
             <div class="dropdown-content">
-                <a href="#" ondblclick="changeColor(this)">Freelancers</a>
-                <a href="#" ondblclick="changeColor(this)">Clients</a>
-                <a href="#" ondblclick="changeColor(this)">Rating</a>
+                <a href="/mainpage/" ondblclick="changeColor(this)">Freelancers</a>
+                <a href="/mainpage/" ondblclick="changeColor(this)">Clients</a>
+                <a href="/mainpage/" ondblclick="changeColor(this)">Rating</a>
             </div>
         </div>
 
@@ -603,174 +607,94 @@
         </div>
 
         <div class="dropdown">
-            <a href="#" ondblclick="changeColor(this)">Services</a>
+            <a href="/services/" ondblclick="changeColor(this)">Services</a>
             <div class="dropdown-content">
-                <a href="#" ondblclick="changeColor(this)">Web Development</a>
-                <a href="#" ondblclick="changeColor(this)">UI/UX Design</a>
-                <a href="#" ondblclick="changeColor(this)">Gaming Tutor</a>
-                <a href="#" ondblclick="changeColor(this)">Softskills Teacher</a>
-                <a href="#" ondblclick="changeColor(this)">AI/ML</a>
-                <a href="#" ondblclick="changeColor(this)">Prompt Engineering (Including GPT-4 Training)</a>
-                <a href="#" ondblclick="changeColor(this)">Cyber Security for Web3</a>
+                <a href="/services/" ondblclick="changeColor(this)">Web Development</a>
+                <a href="/services/" ondblclick="changeColor(this)">UI/UX Design</a>
+                <a href="/services/" ondblclick="changeColor(this)">Gaming Tutor</a>
+                <a href="/services/" ondblclick="changeColor(this)">Softskills Teacher</a>
+                <a href="/services/" ondblclick="changeColor(this)">AI/ML</a>
+                <a href="/services/" ondblclick="changeColor(this)">Prompt Engineering (Including GPT-4 Training)</a>
+                <a href="/services/" ondblclick="changeColor(this)">Cyber Security for Web3</a>
             </div>
         </div>
 
         <div class="dropdown">
-            <a href="#" ondblclick="changeColor(this)">Contact</a>
+            <a href="/contact/" ondblclick="changeColor(this)">Contact</a>
             <div class="dropdown-content">
-                <a href="#" ondblclick="changeColor(this)">Connect with us through Gmail</a>
-                <a href="#" ondblclick="changeColor(this)">Connect with us through Facebook</a>
-                <a href="#" ondblclick="changeColor(this)">Collaborate with us on GitHub</a>
+                <a href="/contact/" ondblclick="changeColor(this)">Connect with us through Gmail</a>
+                <a href="/contact/" ondblclick="changeColor(this)">Connect with us through Facebook</a>
+                <a href="/contact/" ondblclick="changeColor(this)">Collaborate with us on GitHub</a>
             </div>
         </div>
     </nav>
+    <p><b>Something</b> is a dynamic online platform designed to bridge the gap between freelancers and clients, offering a diverse range of services to meet various project needs. Our community includes skilled professionals across different domains, making it a one-stop destination for those seeking expertise in the digital realm.
+        <hr>
+
+        <b style="font-size: 80px; text-align: center;">Services Offered:</b>
+        <br>
+        <br>
+        <b style="font-size: 50px; text-align: center;">Web Development:</b>
+        <br>
+        
+        <p>Connect with proficient web developers for comprehensive solutions, covering both front-end and back-end development.</p>
+        <br>
+        <b style="font-size: 50px; text-align: center;">UI/UX design</b>
+        <p>Elevate user experiences with our talented UI/UX designers who craft visually appealing and user-friendly interfaces.</p>
+        <br>
+        <b style="font-size: 50px; text-align: center;">Game Tutoring:</b>
+        
+        <p>Level up your gaming skills with personalized tutoring sessions provided by experienced gamers in our community.</p>
+        <br>
+        <b style="font-size: 50px; text-align: center;">Soft Skills Teaching:</b>
+        
+        <p>Enhance your interpersonal and communication skills with the guidance of seasoned soft skills teachers.
+            AI/ML Services:</p>
+        <br>
+        <b style="font-size: 50px; text-align: center;">AI/ML Services:</b>
+        
+        <p>Explore the realms of artificial intelligence and machine learning by collaborating with experts who bring innovation to your projects.</p>
+        <br>
+        <b style="font-size: 50px; text-align: center;">Prompt Engineering (Including GPT-4 Training):</b>
+        
+        <p>Dive into the latest advancements in language models and AI with specialized training in GPT-4 and prompt engineering.
+            Cyber Security for Web 3:</p>
+        <b style="font-size: 50px; text-align: center;">Cyber Security for Web 3:</b>
+        
+        <p>Safeguard your web 3.0 applications with the expertise of our cyber security professionals, ensuring a secure digital environment.</p>
+        <br>
+        <hr>
+        <b style="font-size: 50px; text-align: center;">How It Works:</b>
+        <p>Clients can easily navigate our platform, browse through different service categories, and connect with freelancers who match their project requirements. Freelancers, on the other hand, can showcase their skills, expertise, and portfolios to attract potential clients. The platform fosters collaboration, creativity, and innovation, making it a hub for successful project outcomes.</p>
+        <br>
+        <hr>
+        <b style="font-size: 50px; text-align: center;">Connect With Us:</b>
+        <p>Feel free to connect with us through various channels:</p>
+        
+        <b style="font-size: 50px; text-align: center;">GitHub:</b> 
+        <p>Collaborate with us on GitHub to stay updated on our projects and contribute to the community.</p>
+        <b style="font-size: 50px;">Instagram:</b>
+        <p>Follow our Instagram page for visual insights, updates, and highlights from our vibrant community.</p>
+        <b style="font-size: 50px;">LinkedIn:</b>
+        <p>Connect with us on LinkedIn to build professional relationships and stay informed about industry trends.</p>
+        <br>
+        <hr>
+        <b style="font-size: 50px;">Logout:</b>
+        <p>or users with accounts, the platform provides a convenient "Logout" option for secure account management.</p>
+        <br>
+        <hr>
+        
+        <b style="font-size: 50px;">Welcome Message:</b>
+        <p>Upon visiting our website, users are welcomed with a friendly message, inviting them to explore and discover the incredible talent and opportunities available within our community.</p>
+        <br><hr>
+        <b style="font-size: 50px;">Something </b> <p>is not just a platform; it's a dynamic ecosystem where freelancers and clients come together to create, innovate, and succeed.</p></p>
 
 
-    <!-- Add this HTML for testimonials -->
-    <div class="testimonials">
-        <div class="what">What People Say</div>
-        <div class="whatdesc">
-
-            <p>
-                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="prof">
-                "Amazing website! I found exactly what I needed."
-            </p>
-            <p><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="prof">"The services offered are
-                top-notch. Highly recommend!"</p>
-            <p><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="prof">"Great experience with
-                the team. Will come back for more."</p>
-        </div>
-    </div>
+    
 
 
-    <div class="hehe">
-        <div class="row row-cols-1 row-cols-md-2 rowgg">
-            <div class="col cardgg">
-                <a href = "/dashboard/">
-                <div class="card cardhehe">
-                    <img src="https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702339200&semt=ais" class="card-img-top imggg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Programmer</h5>
-                        <p class="card-text card-textgg">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Nesciunt eaque iste ipsa
-                            quis reiciendis modi voluptates natus nisi molestias labore..</p>
-                    </div>
-                </div>
-              </a>
-            </div>
-            <div class="col cardgg">
-                <div class="card cardhehe">
-                    <img src="https://assets.entrepreneur.com/content/3x2/2000/20191009140007-GettyImages-1053962188.jpeg" class="card-img-top imggg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Photographer</h5>
-                        <p class="card-text card-textgg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                            repellendus quod,
-                            veritatis dolorem exercitationem ullam deserunt commodi provident accusamus.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="hehe">
-        <div class="row row-cols-1 row-cols-md-2 rowgg">
-            <div class="col cardgg">
-                <div class="card cardhehe">
-                    <img src="https://st.depositphotos.com/1518767/4293/i/450/depositphotos_42930411-stock-photo-concentrated-male-chef-garnishing-food.jpg" class="card-img-top imggg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Chef</h5>
-                        <p class="card-text card-textgg">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Nesciunt eaque iste ipsa
-                            quis reiciendis modi voluptates natus nisi molestias labore..</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col cardgg">
-                <div class="card cardhehe">
-                    <img src="https://www.shutterstock.com/image-photo/close-lawyer-businessman-working-reading-260nw-1080775979.jpg" class="card-img-top imggg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lawyer</h5>
-                        <p class="card-text card-textgg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                            repellendus quod,
-                            veritatis dolorem exercitationem ullam deserunt commodi provident accusamus.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="hehe">
-        <div class="row row-cols-1 row-cols-md-2 rowgg">
-            <div class="col cardgg">
-                <div class="card cardhehe">
-                    <img src="https://media.istockphoto.com/id/1320976219/photo/young-asia-lady-fashion-designer-using-mobile-phone-receiving-purchase-order-and-showing.jpg?s=612x612&w=0&k=20&c=DZxAgS8t8KY71nduXrQ50Y_0dqdbQT-sb-VT5uErcoY=" class="card-img-top imggg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Influencer</h5>
-                        <p class="card-text card-textgg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eum quo, rem ullam exercitationem tempora.
-                    </div>
-                </div>
-            </div>
-            <div class="col cardgg">
-                <div class="card cardhehe">
-                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2luZ2VyfGVufDB8fDB8fHww" class="card-img-top imggg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Singer</h5>
-                        <p class="card-text card-textgg">This is a longer card with supporting text below as a natural
-                            lead-in to additional
-                            content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Add this HTML for social media links -->
 
-    <div class="footer">
-        <div class="social-media">
-
-            <div class="follow">
-                <h2>
-                    Follow Us
-                </h2>
-            </div>
-            <a href="https://www.linkedin.com/in/pratham-udeshi-8b3890258/" target="_blank">
-                <img src = "https://static.vecteezy.com/system/resources/previews/018/930/587/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" class = "connectlogo">
-            </a>
-            <a href="https://github.com/prathamudeshi" target="_blank">
-                <img src = "data:image/png;base64,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" class = "connectlogo">
-            </a>
-            <a href="https://www.instagram.com/prathamudeshi/" target="_blank">
-                <img src = "https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg" class = "connectlogo">
-            </a>
-        </div>
-
-        <!-- Add this HTML for newsletter subscription -->
-        <div class="newsletter">
-            <h2>Subscribe to Our Newsletter</h2>
-            <form action="#" method="post">
-                <input type="email" name="email" placeholder="Your Email">
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </div>
-
-    <script>
-        function changeColor(link) {
-            link.classList.add('clicked');
-            document.querySelectorAll('.nav-links a, .dropdown button').forEach(function (el) {
-                if (el !== link) {
-                    el.classList.remove('clicked');
-                }
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuIcon = document.querySelector('.menu-icon');
-            const navLinks = document.querySelector('.nav-links');
-            menuIcon.addEventListener('click', function () {
-                navLinks.classList.toggle('active');
-            });
-        });
-    </script>
+    
 </body>
-
 </html>

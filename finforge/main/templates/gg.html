@@ -143,405 +143,438 @@
 
 
 
-    <style>
-        .wrapper-vector-5-child {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            position: absolute;
-            left: 0;
-            top: 0;
-            transform: scale(1.989);
-        }
+<style>
+    .wrapper-vector-5-child {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: scale(1.989);
+    }
 
-        .wrapper-vector-5 {
-            position: absolute;
-            top: -40.6px;
-            left: 550px;
-            width: 955.6px;
-            height: 849.1px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .wrapper-vector-5 {
+        position: absolute;
+        top: -40.6px;
+        left: 550px;
+        width: 955.6px;
+        height: 849.1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        .wrapper-vector-4-child {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            position: absolute;
-            left: 0;
-            top: 0;
-            transform: scale(1.71);
-        }
+    .wrapper-vector-4-child {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: scale(1.71);
+    }
 
-        .wrapper-vector-4 {
-            position: absolute;
-            top: 27px;
-            left: 550px;
-            width: 881.6px;
-            height: 789.1px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .wrapper-vector-4 {
+        position: absolute;
+        top: 27px;
+        left: 550px;
+        width: 881.6px;
+        height: 789.1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        .mesh-holographic-gradients-d-child {
-            position: absolute;
-            top: 169.3px;
-            left: 674px;
-            border-radius: 50%;
-            background-color: var(--color-black);
-            filter: blur(280px);
-            width: 618.2px;
-            height: 530.6px;
-            transform: rotate(21.91deg);
-            transform-origin: 0 0;
-        }
+    .mesh-holographic-gradients-d-child {
+        position: absolute;
+        top: 169.3px;
+        left: 674px;
+        border-radius: 50%;
+        background-color: var(--color-black);
+        filter: blur(280px);
+        width: 618.2px;
+        height: 530.6px;
+        transform: rotate(21.91deg);
+        transform-origin: 0 0;
+    }
 
-        .username {
-            position: absolute;
-            top: 1.4px;
-            left: 81.2px;
-            mix-blend-mode: darken;
-        }
+    .username {
+        position: absolute;
+        top: 1.4px;
+        left: 81.2px;
+        mix-blend-mode: darken;
+    }
 
-        .username-wrapper {
-            position: absolute;
-            top: 58.8px;
-            left: 21.7px;
-            background-color: var(--color-white);
-            width: 245px;
-            height: 26.6px;
-            overflow: hidden;
-        }
+    .username-wrapper {
+        position: absolute;
+        top: 58.8px;
+        left: 21.7px;
+        background-color: var(--color-white);
+        width: 245px;
+        height: 26.6px;
+        overflow: hidden;
+    }
 
-        .another-sign-in-option,
-        .google {
-            position: absolute;
-            display: inline-block;
-        }
+    .another-sign-in-option,
+    .google {
+        position: absolute;
+        display: inline-block;
+    }
 
-        .another-sign-in-option {
-            top: 308px;
-            left: 7px;
-            font-size: 18.2px;
-            color: #f9f4f4;
-            width: 217px;
-            height: 41.3px;
-        }
+    .another-sign-in-option {
+        top: 308px;
+        left: 7px;
+        font-size: 18.2px;
+        color: #f9f4f4;
+        width: 217px;
+        height: 41.3px;
+    }
 
-        .google {
-            top: 350px;
-            left: 39px;
-            font-size: 24px;
-            color: var(--color-white);
-            width: 78.4px;
-            height: 29.4px;
-        }
+    .google {
+        top: 350px;
+        left: 39px;
+        font-size: 24px;
+        color: var(--color-white);
+        width: 78.4px;
+        height: 29.4px;
+    }
 
-        .your-name {
-            position: absolute;
-            top: 1.4px;
-            left: 77.7px;
-            mix-blend-mode: darken;
-        }
+    .your-name {
+        position: absolute;
+        top: 1.4px;
+        left: 77.7px;
+        mix-blend-mode: darken;
+    }
 
-        .your-name-wrapper {
-            position: absolute;
-            top: 102.9px;
-            left: 21.7px;
-            background-color: var(--color-white);
-            width: 245px;
-            height: 26.6px;
-            overflow: hidden;
-        }
+    .your-name-wrapper {
+        position: absolute;
+        top: 102.9px;
+        left: 21.7px;
+        background-color: var(--color-white);
+        width: 245px;
+        height: 26.6px;
+        overflow: hidden;
+    }
 
-        .e-mail-id {
-            position: absolute;
-            top: 1.4px;
-            left: 85.4px;
-            mix-blend-mode: darken;
-        }
+    .e-mail-id {
+        position: absolute;
+        top: 1.4px;
+        left: 85.4px;
+        mix-blend-mode: darken;
+    }
 
-        .e-mail-id-wrapper {
-            position: absolute;
-            top: 147px;
-            left: 20.3px;
-            background-color: var(--color-white);
-            width: 246.4px;
-            height: 26.6px;
-            overflow: hidden;
-        }
+    .e-mail-id-wrapper {
+        position: absolute;
+        top: 147px;
+        left: 20.3px;
+        background-color: var(--color-white);
+        width: 246.4px;
+        height: 26.6px;
+        overflow: hidden;
+    }
 
-        .enter-new-password {
-            position: absolute;
-            top: 0;
-            left: 38px;
-            mix-blend-mode: darken;
-        }
+    .enter-new-password {
+        position: absolute;
+        top: 0;
+        left: 38px;
+        mix-blend-mode: darken;
+    }
 
-        .enter-new-password-wrapper {
-            position: absolute;
-            top: 195px;
-            left: 20px;
-            background-color: var(--color-white);
-            width: 246.4px;
-            height: 26.6px;
-            overflow: hidden;
-        }
+    .enter-new-password-wrapper {
+        position: absolute;
+        top: 195px;
+        left: 20px;
+        background-color: var(--color-white);
+        width: 246.4px;
+        height: 26.6px;
+        overflow: hidden;
+    }
 
-        .re-enter-password {
-            position: absolute;
-            top: 1px;
-            left: 43px;
-            mix-blend-mode: darken;
-        }
+    .re-enter-password {
+        position: absolute;
+        top: 1px;
+        left: 43px;
+        mix-blend-mode: darken;
+    }
 
-        .re-enter-password-wrapper {
-            position: absolute;
-            top: 243px;
-            left: 22px;
-            background-color: var(--color-white);
-            width: 246.4px;
-            height: 26.6px;
-            overflow: hidden;
-        }
+    .re-enter-password-wrapper {
+        position: absolute;
+        top: 243px;
+        left: 22px;
+        background-color: var(--color-white);
+        width: 246.4px;
+        height: 26.6px;
+        overflow: hidden;
+    }
 
-        .sign-up-to-finforge {
-            position: absolute;
-            top: 4px;
-            left: 54px;
-            font-size: var(--font-size-3xl-4);
-            font-family: var(--font-judson);
-            color: var(--color-white);
-            display: inline-block;
-            width: 233.8px;
-            height: 37.1px;
-            mix-blend-mode: hard-light;
-        }
+    .sign-up-to-finforge {
+        position: absolute;
+        top: 4px;
+        left: 54px;
+        font-size: var(--font-size-3xl-4);
+        font-family: var(--font-judson);
+        color: var(--color-white);
+        display: inline-block;
+        width: 233.8px;
+        height: 37.1px;
+        mix-blend-mode: hard-light;
+    }
 
-        .google-icon {
-            position: absolute;
-            top: 349px;
-            left: 5px;
-            width: 25px;
-            height: 25px;
-            overflow: hidden;
-            object-fit: cover;
-        }
+    .google-icon {
+        position: absolute;
+        top: 349px;
+        left: 5px;
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+        object-fit: cover;
+    }
 
-        .frame-child {
-            position: absolute;
-            top: 357.5px;
-            left: -50.5px;
-            border-top: 1px solid var(--color-black);
-            box-sizing: border-box;
-            width: 287px;
-            height: 1px;
-        }
+    .frame-child {
+        position: absolute;
+        top: 357.5px;
+        left: -50.5px;
+        border-top: 1px solid var(--color-black);
+        box-sizing: border-box;
+        width: 287px;
+        height: 1px;
+    }
 
-        .frame-parent {
-            position: absolute;
-            top: 191.3px;
-            left: 550px;
-            background-color: var(--color-black);
-            width: 288px;
-            height: 422px;
-            overflow: hidden;
-            color: var(--color-black);
-        }
+    .frame-parent {
+        position: absolute;
+        top: 191.3px;
+        left: 550px;
+        background-color: var(--color-black);
+        width: 288px;
+        height: 422px;
+        overflow: hidden;
+        color: var(--color-black);
+    }
 
-        .finforge,
-        .the-best-finance {
-            position: absolute;
-            display: inline-block;
-        }
+    .finforge,
+    .the-best-finance {
+        position: absolute;
+        display: inline-block;
+    }
 
-        .finforge {
-            top: 61.3px;
-            left: 550px;
-            font-size: 67.2px;
-            width: 347.2px;
-            height: 148.4px;
-        }
+    .finforge {
+        top: 61.3px;
+        left: 550px;
+        font-size: 67.2px;
+        width: 347.2px;
+        height: 148.4px;
+    }
 
-        .the-best-finance {
-            top: 642.3px;
-            left: 550px;
-            font-size: var(--font-size-3xl-4);
-            white-space: pre-wrap;
-            width: 362.6px;
-            height: 139.3px;
-        }
+    .the-best-finance {
+        top: 642.3px;
+        left: 550px;
+        font-size: var(--font-size-3xl-4);
+        white-space: pre-wrap;
+        width: 362.6px;
+        height: 139.3px;
+    }
 
-        .mesh-holographic-gradients-d-item {
-            position: absolute;
-            top: 674.3px;
-            left: 550px;
-            width: 330px;
-            height: 2px;
-            object-fit: cover;
-        }
+    .mesh-holographic-gradients-d-item {
+        position: absolute;
+        top: 674.3px;
+        left: 550px;
+        width: 330px;
+        height: 2px;
+        object-fit: cover;
+    }
 
-        .mesh-holographic-gradients-d {
-            position: relative;
-            background: rgb(13, 10, 44);
-            background: linear-gradient(190deg, rgba(13, 10, 44, 1) 0%, rgba(25, 120, 113, 1) 50%, rgba(1, 155, 100, 1) 100%);
-            width: 100%;
-            height: 711.9px;
-            overflow: hidden;
-            text-align: left;
-            font-size: var(--font-size-lgi-6);
-            color: var(--color-white);
-            font-family: var(--font-italiana);
-        }
+    .mesh-holographic-gradients-d {
+        position: relative;
+        background: rgb(13, 10, 44);
+        background: linear-gradient(190deg, rgba(13, 10, 44, 1) 0%, rgba(25, 120, 113, 1) 50%, rgba(1, 155, 100, 1) 100%);
+        width: 100%;
+        height: 711.9px;
+        overflow: hidden;
+        text-align: left;
+        font-size: var(--font-size-lgi-6);
+        color: var(--color-white);
+        font-family: var(--font-italiana);
+    }
 
-        body {
-            margin: 0;
-            line-height: normal;
-        }
+    body {
+        margin: 0;
+        line-height: normal;
+    }
 
-        :root {
-            /* fonts */
-            --font-italiana: Italiana;
-            --font-judson: Judson;
+    :root {
+        /* fonts */
+        --font-italiana: Italiana;
+        --font-judson: Judson;
 
-            /* font sizes */
-            --font-size-3xl-4: 22.4px;
-            --font-size-lgi-6: 19.6px;
+        /* font sizes */
+        --font-size-3xl-4: 22.4px;
+        --font-size-lgi-6: 19.6px;
 
-            /* Colors */
-            --color-white: #fff;
-            --color-black: #000;
-        }
+        /* Colors */
+        --color-white: #fff;
+        --color-black: #000;
+    }
 
-        .navbargg {
-            position: fixed !important;
-            top: 0;
-            /* z-index: 1000; */
-            width: 100%;
-            background-color: #333 !important;
-            /* Dark gray background */
-            /* color: #fff !important; White text */
-            color: white !important;
-        }
+    .navbargg {
+        position: fixed !important;
+        top: 0;
+        /* z-index: 1000; */
+        width: 100%;
+        background-color: #333 !important;
+        /* Dark gray background */
+        /* color: #fff !important; White text */
+        color: white !important;
+    }
 
-        .navbar.navbargg {
-            background: rgb(51, 53, 69) !important;
-            color: white !important;
-            position: fixed !important;
-            top: 0;
-            z-index: 1000;
-            width: 100%;
-            background-color: #333 !important;
-            /* Dark gray background */
-            /* color: #fff !important; White text */
-            color: white !important;
-        }
+    .navbar.navbargg {
+        background: rgb(51, 53, 69) !important;
+        color: white !important;
+        position: fixed !important;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        background-color: #333 !important;
+        /* Dark gray background */
+        /* color: #fff !important; White text */
+        color: white !important;
+    }
 
-        .navbar.navbargg,
-        .navbar.navbargg a.navbar-brand,
-        .navbar.navbargg .navbar-nav .nav-link,
-        .navbar.navbargg .navbar-toggler-icon {
-            color: white !important;
-        }
+    .navbar.navbargg,
+    .navbar.navbargg a.navbar-brand,
+    .navbar.navbargg .navbar-nav .nav-link,
+    .navbar.navbargg .navbar-toggler-icon {
+        color: white !important;
+    }
 
-        .fs {
-            height: 100vh !important;
-            width: 100vw !important;
-        }
+    .fs {
+        height: 100vh !important;
+        width: 100vw !important;
+    }
 
-        .hehe {
-            margin-top: 100px;
-        }
+    .hehe {
+        margin-top: 100px;
+    }
 
-        .cardgg {
-            margin-left: 30px;
-            margin-right: 30px;
-            max-width: 720px;
-            height: 50vh;
-            margin-top: 30px;
-            margin-bottom: 15vh;
-        }
+    .cardgg {
+        margin-left: 30px;
+        margin-right: 30px;
+        max-width: 720px;
+        height: 50vh;
+        margin-top: 30px;
+        margin-bottom: 15vh;
+    }
 
-        .imggg {
-            /* margin-top: 2vh !important; */
-            height: 50vh;
-            width: 650px;
-            margin: auto
-        }
+    .imggg {
+        /* margin-top: 2vh !important; */
+        height: 50vh;
+        width: 650px;
+        margin: auto
+    }
 
-        .cardhehe {
-            background-color: rgb(68 111 139);
-            color: white;
-            max-width: 651px;
-        }
+    .cardhehe {
+        /* text-decoration:none; */
+        background-color: rgb(68 111 139);
+        color: white;
+        max-width: 651px;
+    }
 
-        .rowgg {
-            flex-wrap: nowrap !important;
-        }
+    .rowgg {
+        flex-wrap: nowrap !important;
+    }
 
-        .footer {
-            background-color: black;
-            color: white;
-            height: 30vh;
-            margin-top: 7vh;
-        }
+    .footer {
+        background-color: black;
+        color: white;
+        height: 30vh;
+        margin-top: 7vh;
+    }
 
-        .follow {
-            margin-top: 10vh;
-            font-size: medium;
-        }
+    .follow {
+        margin-top: 10vh;
+        font-size: medium;
+    }
 
-        .what {
-            font-family: 'Borel', cursive;
-            font-family: 'Noto Sans KR', sans-serif;
-            font-family: 'Silkscreen', sans-serif;
-            font-size: 90px;
-            font-weight: 600;
-            margin: 51px;
-            text-align: center;
-        }
+    .what {
+        font-family: 'Borel', cursive;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Silkscreen', sans-serif;
+        font-size: 90px;
+        font-weight: 600;
+        margin: 51px;
+        text-align: center;
+    }
 
-        .whatdesc {
-            font-family: 'Arvo', serif;
-        }
+    .whatdesc {
+        font-family: 'Arvo', serif;
+    }
 
-        p {
-            margin-top: 20px;
-            font-size: 30px;
-        }
+    p {
+        margin-top: 20px;
+        font-size: 30px;
+    }
 
-        .prof {
-            height: 72px;
-            margin-right: 20px;
-        }
+    .prof {
+        height: 72px;
+        margin-right: 20px;
+    }
 
-        .card-textgg {
-            font-size: 20px;
-        }
+    .card-textgg {
+        font-size: 20px;
+    }
 
-        .hehehe {
-            height: 50px;
-        }
-        .connectlogo{
-            height: 50px;
-            margin-left: 30px;
-        }
-        .logout{
-            float: left;
-            font-size: 50px;
-        }
-        .something{
-            text-align: center;
-            font-size: 20vh;
-        }
-        .k{
-            text-align: center;
-            /* font-size: 1vh !important; */
-        }
-    </style>
+    .hehehe {
+        height: 50px;
+    }
+    .connectlogo{
+        height: 50px;
+        margin-left: 30px;
+    }
+    .logout{
+        float: left;
+        font-size: 50px;
+    }
+    .something{
+        text-align: center;
+        font-size: 20vh;
+    }
+    .k{
+        text-align: center;
+        /* font-size: 1vh !important; */
+    }
+    .low{
+        margin-top: 5vh;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        max-height: 40vh;
+        margin-bottom: 20vh;
+    }
+    .carimg{
+        height: 75vh;
+
+    }
+    .description{
+        color: white;
+        /* margin-top: 40vh; */
+        text-align: center;
+        font-family: 'Afacad', sans-serif;
+        font-size: 30px;
+        /* font-weight:100; */
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;;
+    }
+    .desctitle{
+        font-size: 70px;
+        margin-top: 40vh;
+        text-align: center;
+        color: white;
+        /* font-family: 'Afacad', sans-serif; */
+        font-family: 'Silkscreen', sans-serif;
+        font-weight:400;
+
+    }
+</style>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Get the navbar element
@@ -585,11 +618,11 @@
         <div class="menu-icon">&#9776;</div>
 
         <div class="dropdown">
-            <a href="#" ondblclick="changeColor(this)">Home</a>
+            <a href="/mainpage/" ondblclick="changeColor(this)">Home</a>
             <div class="dropdown-content">
-                <a href="#" ondblclick="changeColor(this)">Freelancers</a>
-                <a href="#" ondblclick="changeColor(this)">Clients</a>
-                <a href="#" ondblclick="changeColor(this)">Rating</a>
+                <a href="/mainpage/" ondblclick="changeColor(this)">Freelancers</a>
+                <a href="/mainpage/" ondblclick="changeColor(this)">Clients</a>
+                <a href="/mainpage/" ondblclick="changeColor(this)">Rating</a>
             </div>
         </div>
 
@@ -603,24 +636,24 @@
         </div>
 
         <div class="dropdown">
-            <a href="#" ondblclick="changeColor(this)">Services</a>
+            <a href="/services/" ondblclick="changeColor(this)">Services</a>
             <div class="dropdown-content">
-                <a href="#" ondblclick="changeColor(this)">Web Development</a>
-                <a href="#" ondblclick="changeColor(this)">UI/UX Design</a>
-                <a href="#" ondblclick="changeColor(this)">Gaming Tutor</a>
-                <a href="#" ondblclick="changeColor(this)">Softskills Teacher</a>
-                <a href="#" ondblclick="changeColor(this)">AI/ML</a>
-                <a href="#" ondblclick="changeColor(this)">Prompt Engineering (Including GPT-4 Training)</a>
-                <a href="#" ondblclick="changeColor(this)">Cyber Security for Web3</a>
+                <a href="/services/" ondblclick="changeColor(this)">UI/UX Design</a>
+                <a href="/services/" ondblclick="changeColor(this)">Gaming Tutor</a>
+                <a href="/services/" ondblclick="changeColor(this)">Softskills Teacher</a>
+                <a href="/services/" ondblclick="changeColor(this)">AI/ML</a>
+                <a href="/services/" ondblclick="changeColor(this)">Web Development</a>
+                <a href="/services/" ondblclick="changeColor(this)">Prompt Engineering (Including GPT-4 Training)</a>
+                <a href="/services/" ondblclick="changeColor(this)">Cyber Security for Web3</a>
             </div>
         </div>
 
         <div class="dropdown">
-            <a href="#" ondblclick="changeColor(this)">Contact</a>
+            <a href="/contact/" ondblclick="changeColor(this)">Contact</a>
             <div class="dropdown-content">
-                <a href="#" ondblclick="changeColor(this)">Connect with us through Gmail</a>
-                <a href="#" ondblclick="changeColor(this)">Connect with us through Facebook</a>
-                <a href="#" ondblclick="changeColor(this)">Collaborate with us on GitHub</a>
+                <a href="/contact/" ondblclick="changeColor(this)">Connect with us through Gmail</a>
+                <a href="/contact/" ondblclick="changeColor(this)">Connect with us through Facebook</a>
+                <a href="/contact/" ondblclick="changeColor(this)">Collaborate with us on GitHub</a>
             </div>
         </div>
     </nav>
@@ -646,6 +679,7 @@
     <div class="hehe">
         <div class="row row-cols-1 row-cols-md-2 rowgg">
             <div class="col cardgg">
+                <a href = "/dashboard/">
                 <div class="card cardhehe">
                     <img src="https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702339200&semt=ais" class="card-img-top imggg" alt="...">
                     <div class="card-body">
@@ -655,8 +689,10 @@
                             quis reiciendis modi voluptates natus nisi molestias labore..</p>
                     </div>
                 </div>
+                </a>
             </div>
             <div class="col cardgg">
+                <a href = "/dashboard/">
                 <div class="card cardhehe">
                     <img src="https://assets.entrepreneur.com/content/3x2/2000/20191009140007-GettyImages-1053962188.jpeg" class="card-img-top imggg" alt="...">
                     <div class="card-body">
@@ -666,12 +702,14 @@
                             veritatis dolorem exercitationem ullam deserunt commodi provident accusamus.</p>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </div>
     <div class="hehe">
         <div class="row row-cols-1 row-cols-md-2 rowgg">
             <div class="col cardgg">
+                <a href = "/dashboard/">
                 <div class="card cardhehe">
                     <img src="https://st.depositphotos.com/1518767/4293/i/450/depositphotos_42930411-stock-photo-concentrated-male-chef-garnishing-food.jpg" class="card-img-top imggg" alt="...">
                     <div class="card-body">
@@ -681,8 +719,10 @@
                             quis reiciendis modi voluptates natus nisi molestias labore..</p>
                     </div>
                 </div>
+            </a>
             </div>
             <div class="col cardgg">
+                <a href = "/dashboard/">
                 <div class="card cardhehe">
                     <img src="https://www.shutterstock.com/image-photo/close-lawyer-businessman-working-reading-260nw-1080775979.jpg" class="card-img-top imggg" alt="...">
                     <div class="card-body">
@@ -692,21 +732,27 @@
                             veritatis dolorem exercitationem ullam deserunt commodi provident accusamus.</p>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </div>
     <div class="hehe">
         <div class="row row-cols-1 row-cols-md-2 rowgg">
             <div class="col cardgg">
+                <a href = "/dashboard/">
                 <div class="card cardhehe">
                     <img src="https://media.istockphoto.com/id/1320976219/photo/young-asia-lady-fashion-designer-using-mobile-phone-receiving-purchase-order-and-showing.jpg?s=612x612&w=0&k=20&c=DZxAgS8t8KY71nduXrQ50Y_0dqdbQT-sb-VT5uErcoY=" class="card-img-top imggg" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Influencer</h5>
-                        <p class="card-text card-textgg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eum quo, rem ullam exercitationem tempora.
+                        <p class="card-text card-textgg">This is a longer card with supporting text below as a natural
+                            lead-in to additional
+                            content.</p>
                     </div>
                 </div>
+            </a>
             </div>
             <div class="col cardgg">
+                <a href = "/dashboard/">
                 <div class="card cardhehe">
                     <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2luZ2VyfGVufDB8fDB8fHww" class="card-img-top imggg" alt="...">
                     <div class="card-body">
@@ -716,12 +762,12 @@
                             content. This content is a little bit longer.</p>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </div>
 
     <!-- Add this HTML for social media links -->
-
     <div class="footer">
         <div class="social-media">
 
@@ -730,13 +776,13 @@
                     Follow Us
                 </h2>
             </div>
-            <a href="https://www.linkedin.com/in/pratham-udeshi-8b3890258/" target="_blank">
+            <a href="https://www.linkedin.com/in/some-thing-92b2012a5/" target="_blank">
                 <img src = "https://static.vecteezy.com/system/resources/previews/018/930/587/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" class = "connectlogo">
             </a>
-            <a href="https://github.com/prathamudeshi" target="_blank">
+            <a href="https://github.com/Raugaa/Fin_Hub" target="_blank">
                 <img src = "data:image/png;base64,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" class = "connectlogo">
             </a>
-            <a href="https://www.instagram.com/prathamudeshi/" target="_blank">
+            <a href="https://www.instagram.com/something.glp/" target="_blank">
                 <img src = "https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg" class = "connectlogo">
             </a>
         </div>
