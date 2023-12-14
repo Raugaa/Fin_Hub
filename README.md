@@ -8,7 +8,7 @@ Something - Freelancer's marketplace
 # Something
 
 This project is a freelancer's marketplace website showcasing various features, including a navigation bar, header, content sections, and vector images. The website is designed using HTML and styled with CSS. Bootstrap is used for additional styling and responsiveness.
-Also, Django is used for backend and authnetication system implemented in this website
+Also, Django framework is used for backend and authnetication system implemented in this website
 
 ## Features
 - Responsive navigation bar with dropdown menu
