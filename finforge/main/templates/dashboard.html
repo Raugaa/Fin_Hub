@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Noto+Sans+KR&family=Silkscreen&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(to right, #1F9F71, #34A853, #0D0A2C);
+            /* Smooth Gradient */
+        }
+
+        header {
+            background: linear-gradient(to right, #1F9F71, #34A853, #0D0A2C);
+            /* Same Gradient as Body */
+            color: #fff;
+            padding: 20px;
+            text-align: right;
+            /* Align to the right */
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            /* Increased font size */
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            color: #fff;
+            /* White text color */
+            text-transform: uppercase;
+            /* Uppercase text */
+            font-weight: bold;
+            /* Bold text */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            /* Text shadow for depth */
+            margin: 0;
+            /* Remove default margin */
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 0;
+            color: #fff;
+            /* White text color */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #000;
+            /* Black */
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000;
+            /* Black */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            /* Added transform */
+            color: #fff;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #34495e;
+            transform: scale(1.05);
+            /* Scale up on hover */
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+
+        .nav-links a.clicked {
+            color: #800080;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s, padding 0.3s;
+            /* Added padding transition */
+        }
+
+        .nav-links a:hover {
+            background-color: #34495e;
+            padding: 12px;
+            /* Increase padding on hover */
+        }
+
+        /* Add this CSS for testimonials */
+        .testimonials {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Add this CSS for social media */
+        .social-media {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Add this CSS for newsletter */
+        .newsletter {
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+
+
+
+
+
+    <style>
+        .wrapper-vector-5-child {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: scale(1.989);
+        }
+
+        .wrapper-vector-5 {
+            position: absolute;
+            top: -40.6px;
+            left: 550px;
+            width: 955.6px;
+            height: 849.1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrapper-vector-4-child {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: scale(1.71);
+        }
+
+        .wrapper-vector-4 {
+            position: absolute;
+            top: 27px;
+            left: 550px;
+            width: 881.6px;
+            height: 789.1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mesh-holographic-gradients-d-child {
+            position: absolute;
+            top: 169.3px;
+            left: 674px;
+            border-radius: 50%;
+            background-color: var(--color-black);
+            filter: blur(280px);
+            width: 618.2px;
+            height: 530.6px;
+            transform: rotate(21.91deg);
+            transform-origin: 0 0;
+        }
+
+        .username {
+            position: absolute;
+            top: 1.4px;
+            left: 81.2px;
+            mix-blend-mode: darken;
+        }
+
+        .username-wrapper {
+            position: absolute;
+            top: 58.8px;
+            left: 21.7px;
+            background-color: var(--color-white);
+            width: 245px;
+            height: 26.6px;
+            overflow: hidden;
+        }
+
+        .another-sign-in-option,
+        .google {
+            position: absolute;
+            display: inline-block;
+        }
+
+        .another-sign-in-option {
+            top: 308px;
+            left: 7px;
+            font-size: 18.2px;
+            color: #f9f4f4;
+            width: 217px;
+            height: 41.3px;
+        }
+
+        .google {
+            top: 350px;
+            left: 39px;
+            font-size: 24px;
+            color: var(--color-white);
+            width: 78.4px;
+            height: 29.4px;
+        }
+
+        .your-name {
+            position: absolute;
+            top: 1.4px;
+            left: 77.7px;
+            mix-blend-mode: darken;
+        }
+
+        .your-name-wrapper {
+            position: absolute;
+            top: 102.9px;
+            left: 21.7px;
+            background-color: var(--color-white);
+            width: 245px;
+            height: 26.6px;
+            overflow: hidden;
+        }
+
+        .e-mail-id {
+            position: absolute;
+            top: 1.4px;
+            left: 85.4px;
+            mix-blend-mode: darken;
+        }
+
+        .e-mail-id-wrapper {
+            position: absolute;
+            top: 147px;
+            left: 20.3px;
+            background-color: var(--color-white);
+            width: 246.4px;
+            height: 26.6px;
+            overflow: hidden;
+        }
+
+        .enter-new-password {
+            position: absolute;
+            top: 0;
+            left: 38px;
+            mix-blend-mode: darken;
+        }
+
+        .enter-new-password-wrapper {
+            position: absolute;
+            top: 195px;
+            left: 20px;
+            background-color: var(--color-white);
+            width: 246.4px;
+            height: 26.6px;
+            overflow: hidden;
+        }
+
+        .re-enter-password {
+            position: absolute;
+            top: 1px;
+            left: 43px;
+            mix-blend-mode: darken;
+        }
+
+        .re-enter-password-wrapper {
+            position: absolute;
+            top: 243px;
+            left: 22px;
+            background-color: var(--color-white);
+            width: 246.4px;
+            height: 26.6px;
+            overflow: hidden;
+        }
+
+        .sign-up-to-finforge {
+            position: absolute;
+            top: 4px;
+            left: 54px;
+            font-size: var(--font-size-3xl-4);
+            font-family: var(--font-judson);
+            color: var(--color-white);
+            display: inline-block;
+            width: 233.8px;
+            height: 37.1px;
+            mix-blend-mode: hard-light;
+        }
+
+        .google-icon {
+            position: absolute;
+            top: 349px;
+            left: 5px;
+            width: 25px;
+            height: 25px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .frame-child {
+            position: absolute;
+            top: 357.5px;
+            left: -50.5px;
+            border-top: 1px solid var(--color-black);
+            box-sizing: border-box;
+            width: 287px;
+            height: 1px;
+        }
+
+        .frame-parent {
+            position: absolute;
+            top: 191.3px;
+            left: 550px;
+            background-color: var(--color-black);
+            width: 288px;
+            height: 422px;
+            overflow: hidden;
+            color: var(--color-black);
+        }
+
+        .finforge,
+        .the-best-finance {
+            position: absolute;
+            display: inline-block;
+        }
+
+        .finforge {
+            top: 61.3px;
+            left: 550px;
+            font-size: 67.2px;
+            width: 347.2px;
+            height: 148.4px;
+        }
+
+        .the-best-finance {
+            top: 642.3px;
+            left: 550px;
+            font-size: var(--font-size-3xl-4);
+            white-space: pre-wrap;
+            width: 362.6px;
+            height: 139.3px;
+        }
+
+        .mesh-holographic-gradients-d-item {
+            position: absolute;
+            top: 674.3px;
+            left: 550px;
+            width: 330px;
+            height: 2px;
+            object-fit: cover;
+        }
+
+        .mesh-holographic-gradients-d {
+            position: relative;
+            background: rgb(13, 10, 44);
+            background: linear-gradient(190deg, rgba(13, 10, 44, 1) 0%, rgba(25, 120, 113, 1) 50%, rgba(1, 155, 100, 1) 100%);
+            width: 100%;
+            height: 711.9px;
+            overflow: hidden;
+            text-align: left;
+            font-size: var(--font-size-lgi-6);
+            color: var(--color-white);
+            font-family: var(--font-italiana);
+        }
+
+        body {
+            margin: 0;
+            line-height: normal;
+        }
+
+        :root {
+            /* fonts */
+            --font-italiana: Italiana;
+            --font-judson: Judson;
+
+            /* font sizes */
+            --font-size-3xl-4: 22.4px;
+            --font-size-lgi-6: 19.6px;
+
+            /* Colors */
+            --color-white: #fff;
+            --color-black: #000;
+        }
+
+        .navbargg {
+            position: fixed !important;
+            top: 0;
+            /* z-index: 1000; */
+            width: 100%;
+            background-color: #333 !important;
+            /* Dark gray background */
+            /* color: #fff !important; White text */
+            color: white !important;
+        }
+
+        .navbar.navbargg {
+            background: rgb(51, 53, 69) !important;
+            color: white !important;
+            position: fixed !important;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            background-color: #333 !important;
+            /* Dark gray background */
+            /* color: #fff !important; White text */
+            color: white !important;
+        }
+
+        .navbar.navbargg,
+        .navbar.navbargg a.navbar-brand,
+        .navbar.navbargg .navbar-nav .nav-link,
+        .navbar.navbargg .navbar-toggler-icon {
+            color: white !important;
+        }
+
+        .fs {
+            height: 100vh !important;
+            width: 100vw !important;
+        }
+
+        .hehe {
+            margin-top: 100px;
+        }
+
+        .cardgg {
+            margin-left: 30px;
+            margin-right: 30px;
+            max-width: 720px;
+            height: 50vh;
+            margin-top: 30px;
+            margin-bottom: 15vh;
+        }
+
+        .imggg {
+            /* margin-top: 2vh !important; */
+            height: 50vh;
+            width: 650px;
+            margin: auto
+        }
+
+        .cardhehe {
+            background-color: rgb(68 111 139);
+            color: white;
+            max-width: 651px;
+        }
+
+        .rowgg {
+            flex-wrap: nowrap !important;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            height: 30vh;
+            margin-top: 7vh;
+        }
+
+        .follow {
+            margin-top: 10vh;
+            font-size: medium;
+        }
+
+        .what {
+            font-family: 'Borel', cursive;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-family: 'Silkscreen', sans-serif;
+            font-size: 90px;
+            font-weight: 600;
+            margin: 51px;
+            text-align: center;
+        }
+
+        .whatdesc {
+            font-family: 'Arvo', serif;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 30px;
+        }
+
+        .prof {
+            height: 72px;
+            margin-right: 20px;
+        }
+
+        .card-textgg {
+            font-size: 20px;
+        }
+
+        .hehehe {
+            height: 50px;
+        }
+        .connectlogo{
+            height: 50px;
+            margin-left: 30px;
+        }
+        .logout{
+            float: left;
+            font-size: 50px;
+        }
+        .something{
+            text-align: center;
+            font-size: 20vh;
+        }
+        .k{
+            text-align: center;
+            /* font-size: 1vh !important; */
+        }
+        .low{
+            margin-top: 5vh;
+            margin-left: 5vh;
+            margin-right: 5vh;
+            max-height: 40vh;
+            margin-bottom: 20vh;
+        }
+        .carimg{
+            height: 100vh;
+
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the navbar element
+            var navbar = document.getElementById("navbar");
+
+            // Get the initial offset position of the navbar
+            var initialOffset = navbar.offsetTop;
+
+            // Add a scroll event listener
+            window.addEventListener("scroll", function () {
+                // Check if the page has been scrolled
+                if (window.pageYOffset > initialOffset) {
+                    // If so, add the "fixed-top" class to make the navbar sticky
+                    navbar.classList.add("fixed-top");
+                } else {
+                    // If not, remove the "fixed-top" class
+                    navbar.classList.remove("fixed-top");
+                }
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+    <header>
+        <a href = "/login/"><div class="logout">logout</div></a>
+        <div class="what something">Something</div>
+        
+        <div class="k"><p>Welcome to our website. Explore and discover amazing things!</p></div>
+        
+    </header>
+
+    <nav class="nav-links hehehe">
+        <div class="menu-icon">&#9776;</div>
+
+        <div class="dropdown">
+            <a href="#" ondblclick="changeColor(this)">Home</a>
+            <div class="dropdown-content">
+                <a href="#" ondblclick="changeColor(this)">Freelancers</a>
+                <a href="#" ondblclick="changeColor(this)">Clients</a>
+                <a href="#" ondblclick="changeColor(this)">Rating</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" ondblclick="changeColor(this)">About</a>
+            <div class="dropdown-content">
+                <a href="#" ondblclick="changeColor(this)">Us and what we do</a>
+                <a href="#" ondblclick="changeColor(this)">Why we started</a>
+                <a href="#" ondblclick="changeColor(this)">How we keep the algo unbiased</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" ondblclick="changeColor(this)">Services</a>
+            <div class="dropdown-content">
+                <a href="#" ondblclick="changeColor(this)">Web Development</a>
+                <a href="#" ondblclick="changeColor(this)">UI/UX Design</a>
+                <a href="#" ondblclick="changeColor(this)">Gaming Tutor</a>
+                <a href="#" ondblclick="changeColor(this)">Softskills Teacher</a>
+                <a href="#" ondblclick="changeColor(this)">AI/ML</a>
+                <a href="#" ondblclick="changeColor(this)">Prompt Engineering (Including GPT-4 Training)</a>
+                <a href="#" ondblclick="changeColor(this)">Cyber Security for Web3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" ondblclick="changeColor(this)">Contact</a>
+            <div class="dropdown-content">
+                <a href="#" ondblclick="changeColor(this)">Connect with us through Gmail</a>
+                <a href="#" ondblclick="changeColor(this)">Connect with us through Facebook</a>
+                <a href="#" ondblclick="changeColor(this)">Collaborate with us on GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <div id="carouselExampleCaptions" class="carousel slide low">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://cdn.thecollector.com/wp-content/uploads/2023/05/tips-to-become-a-great-photographer.jpg?width=1400&quality=70" class="d-block w-100 carimg" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.adorama.com/alc/wp-content/uploads/2017/07/photographer-working-studio-feature-825x465.jpg" class="d-block w-100 carimg" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.istockphoto.com/id/1395071229/photo/young-passionate-photographer-image-indian-boy.jpg?s=612x612&w=0&k=20&c=ys1k1ZA5rJzom6HaSvX_HMlAEFh52XTMkULIzJPiyl8=" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+    
+</body>
+</html>
